@@ -1,0 +1,47 @@
+{
+    "name": "@abhigupta/onlinelibrary",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "copy": "copy src\\index.html dist\\index.html",
+        "start": "npm run build",
+        "build": "webpack && npm run copy && webpack-dev-server --content-base src/ --hot --inline --history-api-fallback"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/abhipanorian/OnlineLibrary.git"
+    },
+    "author": "Abhishek Gupta",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/abhipanorian/OnlineLibrary/issues"
+    },
+    "homepage": "https://github.com/abhipanorian/OnlineLibrary#readme",
+    "dependencies": {
+        "@material-ui/core": "^3.9.2",
+        "@material-ui/icons": "^3.0.2",
+        "prop-types": "^15.6.2",
+        "react": "^16.7.0",
+        "react-confirm-alert": "^2.1.0",
+        "react-dom": "^16.7.0",
+        "react-notify-toast": "^0.5.0",
+        "react-redux": "^6.0.0",
+        "react-router-dom": "^4.3.1",
+        "redux": "^4.0.1"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.5",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-stage-2": "^6.24.1",
+        "css-loader": "^2.1.0",
+        "node-sass": "^4.11.0",
+        "sass-loader": "^7.1.0",
+        "style-loader": "^0.23.1",
+        "webpack": "^4.28.3",
+        "webpack-cli": "^3.2.1",
+        "webpack-dev-server": "^3.1.14"
+    }
+}
